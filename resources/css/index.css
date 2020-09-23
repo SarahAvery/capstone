@@ -132,6 +132,7 @@ h3 {
 }
 
 .button {
+  width: 250px;
   text-align: center;
   background-color: rgb(151, 148, 148);
   color: #fff;
@@ -202,30 +203,43 @@ p {
     display: none;
   }
 
-  .event {
-    padding: 0;
-  }
   .practice {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    margin: 32px 24px;
     border-right: 1px solid lightgray;
+    padding: 32px 24px;
   }
 
   .banner-2-img img {
     width: 100%;
     height: auto;
-    padding: 4px;
   }
 
-  .event-2-img {
+  h6 {
+    margin-top: 10px;
+  }
+
+  .ds-events {
+    width: 40%;
+  }
+
+  .ds-event {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-left: 4px;
+  }
+
+  .info {
+    width: 65%;
+  }
+
+  .img {
     width: 35%;
   }
-
-  .event-2-img img {
+  .img img {
     width: 100%;
     height: auto;
-    padding: 4px;
   }
 }
