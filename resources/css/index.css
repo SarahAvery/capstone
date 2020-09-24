@@ -105,8 +105,19 @@ section {
   flex-wrap: wrap;
 }
 
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
 .banner {
   background-color: lightgrey;
+}
+
+.banner .wrapper {
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .banner-img img {
@@ -122,6 +133,7 @@ section {
 h2 {
   margin-bottom: 20px;
   color: rgb(63, 60, 60);
+
   font-size: 32px;
   font-weight: bold;
 }
@@ -144,7 +156,7 @@ h3 {
 @media only screen and (min-width: 768px) {
   section {
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .banner {
@@ -172,7 +184,8 @@ h3 {
 /* Second Banner */
 /* Mobile */
 
-.practice {
+.practice,
+.ds-event {
   display: none;
 }
 
@@ -203,12 +216,16 @@ p {
     display: none;
   }
 
+  .banner-2 {
+    margin: 32px 4px 32px 24px;
+  }
+
   .practice {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
     border-right: 1px solid lightgray;
-    padding: 32px 24px;
+    padding-right: 24px;
   }
 
   .banner-2-img img {
@@ -216,12 +233,24 @@ p {
     height: auto;
   }
 
+  h2 {
+    margin-bottom: 24px;
+    /* margin-top: 32px; */
+  }
+
+  h4 {
+    font-size: 20px;
+    color: rgb(107, 104, 104);
+  }
   h6 {
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: rgb(85, 83, 83);
   }
 
   .ds-events {
     width: 40%;
+    padding-left: 16px;
   }
 
   .ds-event {
@@ -241,5 +270,42 @@ p {
   .img img {
     width: 100%;
     height: auto;
+  }
+}
+
+/* Start Learning */
+/* Mobile */
+
+.start-learn-mobile {
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.sl {
+  text-align: center;
+}
+.sl-wrapper {
+  width: 100%;
+}
+
+.link {
+  margin: 10px 16px;
+  padding: 16px;
+  background-color: lightgray;
+}
+
+.link .links {
+  text-align: left;
+  margin: 0;
+}
+
+.start-learn-ds {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .start-learn-mobile {
+    display: none;
   }
 }
